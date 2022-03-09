@@ -11,7 +11,6 @@ def hic_criteria(region, bins):
     return not(sum(weights.isna())>0)
 
 
-
 def find_nonnan(region, bins, resolution, criteria):
     chrom, start, end = bf.parse_region(region)
     
@@ -55,9 +54,7 @@ def find_all_regions(cool_path, assembly, resolution, regionsize):
     for chrom, chromsize in zip(chromsizes.index, chromsizes):
         regions = find_regions(chrom, chromsize, resolution, regionsize, c.bins()[:], hic_criteria)
         all_regions += regions
-    
-    all_regions_str = '\n'.join(all_regions)
 
-    return all_regions_str
+    return all_regions
 
 

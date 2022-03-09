@@ -13,5 +13,6 @@ Options:
   -r, --resolution INTEGER  resolution
   -a, --assembly TEXT       assembly
   -l, --regionsize INTEGER  region length
+  -m, --merge BOOLEAN	    merge connected regions
   
 ```
