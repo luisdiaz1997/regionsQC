@@ -16,3 +16,6 @@ Options:
   -m, --merge BOOLEAN	    merge connected regions
   
 ```
+# Todo
+
+Flexible quality metrics
